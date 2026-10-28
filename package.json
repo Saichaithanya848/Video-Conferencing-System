@@ -1,0 +1,15 @@
+{
+  "name": "video-conferencing-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A student-friendly video conferencing app using WebRTC and Socket.IO",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "test": "npm test --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
